@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Consegue ver a imagem completa? Tente ampliar sua página para uma melhor experiência</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/pexels340.jpg">
+        <source media="(max-width: 790px)" srcset="imagens/pexels500.jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/pexels740.jpg">
+        <img src="imagens/pexels1000.jpg" alt="Imagem ilha montanha">
+    </picture>
+</body>
+</html>

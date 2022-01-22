@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir o site em diferentes dispositivos ou tente diminuir o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir áudios no HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="media/Sunday Rain - Cheel.mp3" type="audio/mpeg">
+        <source src="media/Sunday Rain - Cheel.ogg" type="audio/ogg">
+        <source src="media/Sunday Rain - Cheel.wav" type="audio/wav">
+    </audio>
+    <!-- MP3 WAV OGG -->
+    <p>Infelizmente seu navegador não é compatível com a reprodução de áudio.</p>
+        <a href="media/Sunday Rain - Cheel.mp3" download="Sunday Rain - Cheel.mp3" type="audio/mpeg">Baixar arquivo MP3</a>
+</body>
+</html>

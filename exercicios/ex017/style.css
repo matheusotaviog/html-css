@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body {
+    background-color: aqua;
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 12px;
+    border-radius: 12px;
+    margin: auto;
+    box-shadow: 5px 5px 19px rgba(54, 121, 121, 0.767);
+}
