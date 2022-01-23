@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical + video com responsividade</title>
+    <style>
+        body {
+            height: 97vh;
+            background: black url('imagens/wallpaper005.jpg') center center fixed;
+            background-size: cover;
+        }
+
+        main {
+            position: relative;
+            background-color: lightpink;
+            max-width: 1000px;
+            height: 700px;
+            padding: 15px;
+            border-radius: 12px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #container {
+            position:relative;
+            background-color: lightskyblue;
+            max-width: 800px;
+            padding: 15px;
+            border-radius: 10px;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            padding-bottom: 50%;
+        }
+
+        #video {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article id="container">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/onxx7t2dtF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+    </main>
+</body>
+</html>
